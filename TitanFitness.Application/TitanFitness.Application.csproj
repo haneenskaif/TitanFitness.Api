@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TitanFitness.Domain\TitanFitness.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Booking\BookingDtos\" />
+    <Folder Include="Features\CheckIn\Commands\" />
+    <Folder Include="Features\CheckIn\Queries\" />
+    <Folder Include="Features\ClassSession\ClassSessionDtos\" />
+    <Folder Include="Features\ClassSession\Queries\" />
+    <Folder Include="Features\Plans\Commands\" />
+  </ItemGroup>
+
+</Project>
